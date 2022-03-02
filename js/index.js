@@ -53,22 +53,14 @@ function Messages (obj){
         .nextElementSibling
         .firstElementChild
         .nextElementSibling
-        .innerHTML = `${date.getFullYear()}-
-            ${(date.getMonth()+1)<10?'0'+(date.getMonth()+1):date.getMonth()}-
-            ${date.getDate()<10?'0'+date.getDate():date.getDate()}&nbsp
-            ${(date.getHours()-3)<10?'0'+(date.getHours()-3):(date.getHours()-3)}:
-            ${date.getMinutes()<10?'0'+date.getMinutes():date.getMinutes()}
+        .innerHTML = `${date.getFullYear()}-${(date.getMonth()+1)<10?'0'+(date.getMonth()+1):date.getMonth()}-${date.getDate()<10?'0'+date.getDate():date.getDate()}&nbsp${(date.getHours()-3)<10?'0'+(date.getHours()-3):(date.getHours()-3)}:${date.getMinutes()<10?'0'+date.getMinutes():date.getMinutes()}
             `
     elm.nextElementSibling
         .nextElementSibling
         .nextElementSibling
         .firstElementChild
         .nextElementSibling
-        .innerHTML = `${date.getFullYear()}-
-            ${(date.getMonth()+1)<10?'0'+(date.getMonth()+1):date.getMonth()}-
-            ${date.getDate()<10?'0'+date.getDate():date.getDate()}&nbsp
-            ${(date.getHours()+5)<10?'0'+(date.getHours()+5):(date.getHours()+5)>24?'23':(date.getHours()+5)}:
-            ${date.getMinutes()<10?'0'+date.getMinutes():date.getMinutes()}
+        .innerHTML = `${date.getFullYear()}-${(date.getMonth()+1)<10?'0'+(date.getMonth()+1):date.getMonth()}-${date.getDate()<10?'0'+date.getDate():date.getDate()}&nbsp${(date.getHours()+5)<10?'0'+(date.getHours()+5):(date.getHours()+5)>24?'23':(date.getHours()+5)}:${date.getMinutes()<10?'0'+date.getMinutes():date.getMinutes()}
             `
 }
 
